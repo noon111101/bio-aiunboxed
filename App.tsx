@@ -5,7 +5,6 @@ import LinkCard from './components/LinkCard';
 import ShowcaseCard from './components/ShowcaseCard';
 import AIToolkit from './components/AIToolkit';
 import {
-  Instagram,
   TikTokIcon,
   Youtube,
   Mail,
@@ -44,12 +43,10 @@ const HeaderCard: React.FC = () => (
     <div className="flex items-center space-x-5 mt-6">
       {Object.entries(socials).map(([key, href]) => {
         const icons: { [key: string]: React.ReactNode } = {
-          instagram: <Instagram size={22} />,
           tiktok: <TikTokIcon className="w-[22px] h-[22px]" />,
           youtube: <Youtube size={22} />,
         };
         const hoverColors: { [key: string]: string } = {
-            instagram: 'hover:text-[#E1306C]',
             tiktok: 'hover:text-white',
             youtube: 'hover:text-[#FF0000]',
         };
@@ -179,7 +176,6 @@ const App: React.FC = () => {
             >
                 <h3 className="text-lg font-semibold text-gray-300 text-center tracking-wider uppercase">Mạng xã hội</h3>
                 <div className="space-y-3 max-w-sm mx-auto">
-                    <LinkCard href={socials.instagram} icon={<Instagram size={24} />} title="Instagram" className="bg-gradient-to-br from-[#833ab4] via-[#fd1d1d] to-[#fcb045] text-white border-transparent hover:saturate-150"/>
                     <LinkCard href={socials.tiktok} icon={<TikTokIcon className="w-6 h-6"/>} title="TikTok" className="bg-black text-white border-gray-700 hover:bg-gray-800"/>
                     <LinkCard href={socials.youtube} icon={<Youtube size={24} />} title="YouTube" className="bg-[#FF0000] text-white border-transparent hover:brightness-110"/>
                 </div>

@@ -2,7 +2,6 @@
 import React from 'react';
 import type { SVGProps } from 'react';
 import {
-  Instagram,
   Youtube,
   Send,
   Mail,
@@ -56,4 +55,4 @@ export const TelegramIcon: React.FC<LucideProps> = (props) => (
 );
 
 
-export { Instagram, Youtube, Send, Mail, ChevronRight, Globe, MessageSquare, ChevronLeft };
+export { Youtube, Send, Mail, ChevronRight, Globe, MessageSquare, ChevronLeft };

@@ -72,7 +72,6 @@ export const PORTFOLIO_DATA: PortfolioData = {
   email: 'phtrieummo@gmail.com',
   avatarUrl: 'https://ai-unboxed.com/assets/ai-logo-BfORuCYA.png',
   socials: {
-    instagram: 'https://www.instagram.com/ai_unb0xed/',
     tiktok: 'https://www.tiktok.com/@aiunbo_xed',
     youtube: 'https://www.youtube.com/@M%E1%BB%9FH%E1%BB%99pAI',
   },
